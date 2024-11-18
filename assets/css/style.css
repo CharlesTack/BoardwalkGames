@@ -64,8 +64,16 @@ h2 {
     background-color: transparent;
 }
 
-#services .card {
+#services .card,
+#new-games .card,
+#fav-games .card {
     margin-bottom: 1.5rem;
+}
+
+/* Game library cards */
+#new-games .card,
+#fav-games .card {
+    border: none;
 }
 
 /* grid visualisation CSS for testing */
@@ -88,12 +96,18 @@ h2 {
     #services .card-body {
         min-height: 191px;
     }
+    #fav-games .card-body {
+        min-height: 310px;
+    }
 }
 
 /* Large devices (small laptops, 992px and up */
 @media screen and (min-width: 992px) {
     /* Make all service cards the same height for consistency */
     #services .card-body {
+        min-height: auto;
+    }
+    #fav-games .card-body {
         min-height: auto;
     }
 }
@@ -103,6 +117,9 @@ h2 {
     /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 220px;
+    }
+    #fav-games .card-body {
+        min-height: 314px;
     }
 }
 
