@@ -195,6 +195,29 @@ h2 {
     #fav-games .card-body {
         min-height: 314px;
     }
+    #events .row {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    #events .col-xl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    #events .content-wrapper {
+        padding-top: 1.5rem; /* Adjust this value to match the top edge of the first paragraph */
+    }
+    #events .table-wrapper {
+        padding-top: 2.5rem; /* Adjust this value to match the top edge of the first paragraph */
+    }
+    #events-button {
+        margin-top: 20px;
+    }
+    #events h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5rem; /* Adjust this value to control the spacing */
+    }
 }
 
 /* XXL devices (larger desktops, 1400px and up */
