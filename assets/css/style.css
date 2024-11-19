@@ -137,6 +137,12 @@ h2 {
     background-color: transparent;
 }
 
+/* Events Page */
+#student-banner {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
 /* grid visualisation CSS for testing */
 
 /* .container,
