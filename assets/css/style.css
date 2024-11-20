@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
 
@@ -134,6 +141,8 @@ h2 {
 
 #contact .social-links i:hover {
     color: var(--secondary-color);
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -173,8 +182,11 @@ h2 {
     
     /* Fix with of events discount banner */
     #student-banner {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
-        justify-self: center;
+        -ms-grid-column-align: center;
+            justify-self: center;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -207,12 +219,19 @@ h2 {
         min-height: 314px;
     }
     #events .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: nowrap;
-        align-items: flex-start;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
     #events .col-xl-6 {
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
         max-width: 50%;
     }
     #events .content-wrapper {
@@ -232,7 +251,9 @@ h2 {
 
     /* Fix layout of reserve form section */
     #reserve-form .col-md-4 {
-        flex: 0 0 33.3333%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.3333%;
+                flex: 0 0 33.3333%;
         max-width: 33.3333%;
     }
 }
